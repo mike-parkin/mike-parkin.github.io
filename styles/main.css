@@ -1,9 +1,10 @@
 body {
     margin: 0;
+    font-family: 'Montserrat', sans-serif;   
 }
 /* header css */
 header {
-    background-color:slateblue;
+    background-color:#a1fc03;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -11,6 +12,12 @@ header {
 }
 #title {
     margin-right: auto;
+}
+#title h1 {
+    font-weight: 600;
+}
+#title h4 {
+    font-weight: 200;
 }
 header h3 {
     margin: 20px 0px 20px 0px;
@@ -34,9 +41,10 @@ header a:hover {
 .sidebar {
     height: auto;
     padding: 0;
-    background-color: chartreuse !important;
+    background-color: salmon;
 }
 .sidebar img {
+    border: 5px solid blanchedalmond;
     border-radius: 50%;
     margin: 10px 10px 10px 10px;
 }
@@ -44,7 +52,7 @@ header a:hover {
 
 
 
-* {
+/* {
     outline: 1px solid red !important;
 }
 * {
@@ -52,4 +60,4 @@ header a:hover {
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-}
+}*/

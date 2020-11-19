@@ -16,6 +16,7 @@
     grid-row: 1;
     grid-column: 1/5;
     text-align: center;
+    color: papayawhip;
     padding-top: 40px;
 }
 .right-col {
@@ -29,15 +30,27 @@
 }
 
 .blog-link {
-    border: 2px solid;
+    border: 2px solid blanchedalmond;
     border-radius: 10px;
     object-fit: contain;
 }
-.tech {
-    background-image: url("https://via.placeholder.com/450x400.png");
+.blog-link a {
+    text-align: center;
+    text-decoration: none;
+    color: #eee;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.tech {  
+    background-image: url(../images/tea.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .culture {
-    background-image: url("https://via.placeholder.com/450x400.png");
+    background-image: url(../images/coffee.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media only screen and (max-width: 780px) {
