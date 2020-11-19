@@ -1,0 +1,21 @@
+.content {
+    background-image: url(../images/cup.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: papayawhip;
+}
+.content h1 {
+    margin: 2em;    
+}
+.content ul{
+    list-style: square;
+    margin-left: 2em;
+}
+.content li {
+    margin-bottom: 1em;
+}
+.content a {
+    text-decoration: none;
+    color: papayawhip; 
+    font-size: 20pt;
+}
