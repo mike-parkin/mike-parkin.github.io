@@ -39,6 +39,7 @@
             <img src="../images/github.jpg" alt="git"></a>
         </div>
       </div>
+      <div class="yellow-box"></div>
       <div class="content">
           <div class="red-box"></div>
           <div class="blue-box"></div>
@@ -49,7 +50,7 @@
               <h3>Relative</h3>
               <p>Relative positioning places the object relative to itself, which is confusing, just setting the position as relative will not change anything but by adding positioning properties (top, right, bottom, left), the object will position itself relative to the its position in the flow of the document, in simple terms; the top left corner of the element.</p>
               <p>As an example, In this paragraph you will see <span class="up">some</span> words are <span class="down">out</span> of line with <span class="down-left">the rest</span> of the <span class="right">text</span>. This text has been placed within span tags and their relative position has been altered. </p>
-              <p>Look at the word “some”. it has been placed within its own element inside the paragraph and that element’s position is set to relative, and then the bottom position has been set to 3px, so it has moved the text up 3px from where it would normally be.</p>
+              <p>Look at the word “some”. it has been placed within its own element inside the paragraph and that element’s position is set to relative, and then the bottom position has been set to 3px, so it has moved the text up 3px from where it would normally be. The code below shows how the word 'some' is moved of its line using relative position.</p>
               <pre><code>
                 HTML: &ltspan class="up">some&lt/span&gt 
 
@@ -59,6 +60,32 @@
                 bottom: 3px;
                 }
               </code></pre>
+              <h3>Absolute</h3>
+              <p>An element with absolute position will be lifted out of the “flow” of the document, meaning it doesn’t stay in position with the other elements around it, and can be positioned exactly where you want it on the page using top, right, bottom and left attributes. An element with the position of absolute will only be positioned relative to the body of the page, OR if it’s placed within another element with a position attribute of anything but static, it will be positioned relative to that parent element.</p>
+              <p>The small yellow box in the top right is set to an absolute position  of 10px from the top, in relation to the body of the document, the small red box in the top corner of this article is also set to an absolute position of 10px from the top, but it is inside an element with relative position, there for the red box is 10px from the top if this parent element.</p>
+              <pre><code>
+                .red-box {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    height: 20px;
+                    width: 20px;
+                    background-color: red;
+                }
+              </code></pre>
+              <h3>Fixed</h3>
+              <p>Fixed position places the element on the page relative to the body and viewport (screen) of the page, This element will stay in the exact same place even when the page is scrolled, this is useful if you want to have anchors or menus always visible to the user. For example the blue box at the bottom rigth of this page has been put in fixed position so no matter how far down this blog you scroll, the blue box will always be in the same postion on the screen</p>
+              <pre><code> 
+                .blue-box {
+                    position: fixed;
+                    bottom: 10px;
+                    right: 10px;
+                    height: 20px;
+                    width: 20px;
+                    background-color: blue;
+                } 
+              </code><pre> 
+
           </article>
       </div>
     </main>  
