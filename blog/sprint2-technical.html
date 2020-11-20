@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../styles/main.css" rel="stylesheet" type="text/css">
     <link href="../styles/blog-entry.css" rel="stylesheet" type="text/css">
+    <link href="../styles/position-example.css" rel="stylesheet" type="text/css">
   <body>
     <header class="navbar">
       <div id="title"><h1>Mike Parkin</h1><h4>Novice developer, longtime breakfast advocate.</h4></div>
@@ -39,5 +40,25 @@
         </div>
       </div>
       <div class="content">
+          <div class="red-box"></div>
+          <div class="blue-box"></div>
+          <article>
+              <h1>Positioning in CSS: relative, absolute and fixed</h1>
+              <p>Before discussing position attributes in CSS, it is best to start by mentioning that everything displayed on webpage is made up of elements. Some elements are placed inside other elements, like a paragraph inside an article for example. All elements are rectangular in shape and start with a default position of ‘static’. This places the element within the ‘flow’ of the document, that is either, beneath, or to the right of the previous element. By using CSS we can manipulate the element using the ‘position’ property. Here I will be discussing three types of positioning and how they work. These are: relative, absolute, and fixed. </p>
+
+              <h3>Relative</h3>
+              <p>Relative positioning places the object relative to itself, which is confusing, just setting the position as relative will not change anything but by adding positioning properties (top, right, bottom, left), the object will position itself relative to the its position in the flow of the document, in simple terms; the top left corner of the element.</p>
+              <p>As an example, In this paragraph you will see <span class="up">some</span> words are <span class="down">out</span> of line with <span class="down-left">the rest</span> of the <span class="right">text</span>. This text has been placed within span tags and their relative position has been altered. </p>
+              <p>Look at the word “some”. it has been placed within its own element inside the paragraph and that element’s position is set to relative, and then the bottom position has been set to 3px, so it has moved the text up 3px from where it would normally be.</p>
+              <pre><code>
+                HTML: &ltspan class="up">some&lt/span&gt 
+
+                CSS: 
+                .up {
+                position: relative;
+                bottom: 3px;
+                }
+              </code></pre>
+          </article>
       </div>
     </main>  

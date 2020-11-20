@@ -1,0 +1,39 @@
+.content {
+    position: relative;
+}
+.red-box {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+}
+.blue-box {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+}
+article pre {
+    text-align: left;
+}
+.up {
+    position: relative;
+    bottom: 3px;
+}
+.down {
+    position: relative;
+    top: 3px;
+}
+.down-left {
+    position: relative;
+    top: 3px;
+    right: 3px;
+}
+.right {
+    position: relative;
+    left: 3px;
+}
