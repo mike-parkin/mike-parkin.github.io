@@ -1,0 +1,11 @@
+.content {
+    background-color: papayawhip;    
+}
+.content article {
+    margin: 4em 10em 4em 10em;
+    color: black;   
+    text-align: center;
+}
+article p {
+    font-weight: 600;
+}
