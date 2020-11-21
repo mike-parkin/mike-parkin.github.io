@@ -2,10 +2,13 @@
     background-color: papayawhip;    
 }
 .content article {
-    margin: 4em 10em 4em 10em;
+    margin: 4em 15em 4em 15em;
     color: black;   
     text-align: center;
 }
 article p {
     font-weight: 600;
+}
+article pre {
+    background-color: #ccc;
 }
