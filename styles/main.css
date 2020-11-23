@@ -33,6 +33,7 @@ header a:hover {
     color: salmon;
     cursor: pointer;
 }
+
 /* main content css */
 .container-grid {
     display: grid;
@@ -47,6 +48,14 @@ header a:hover {
     border: 5px solid blanchedalmond;
     border-radius: 50%;
     margin: 10px 10px 10px 10px;
+}
+
+@media only screen and (max-width:600px) {
+    .sidebar {
+        grid-row-start: 4;
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 
