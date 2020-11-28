@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML,CSS, the DOM and JS</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+    <link href="../styles/blog-entry.css" rel="stylesheet" type="text/css">
+  </head>
+  
+  <body>
+    <header class="navbar">
+      <div id="title"><h1>Mike Parkin</h1><h4>Novice developer, longtime breakfast advocate.</h4></div>
+      <h3><a href="blog-culture.html">Cultural</a></h3>
+      <h3><a href="blog-tech.html">Technical</a></h3>
+      <h3><a href="../index.html">Home</a></h3>
+      
+    </header>
+    <main class="container-grid">
+      <div class="sidebar">
+        <div>
+          <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3664913/" target="_blank">
+            <img src="../images/avo.jpg" alt="avocado"></a>
+        </div>
+        <div>
+          <a href="https://devacademy.co.nz/" target="_blank">
+            <img src="../images/laptop.jpg" alt="laptop"></a>
+        </div>
+        <div>
+          <a href="https://www.inspiredtaste.net/19516/mimosa-recipe/" target="_blank">
+            <img src="../images/mimosa.jpg" alt="mimosas"></a>
+        </div>
+        <div>
+          <a href="https://www.greens.org.nz/" target="_blank">
+            <img src="../images/green.jpg" alt="greensnz"></a>
+        </div>
+        <div>
+          <a href="https://github.com/mike-parkin" target="_blank">
+            <img src="../images/github.jpg" alt="git"></a>
+        </div>
+      </div> 
+      <div class="content"> 
+        <article>
+          <h1>JavaScript, HTML, CSS and the DOM</h1>
+          <h3>Difference between HTML and CSS</h3>
+          <p>A good way to think about the difference and the relationship between HTML and CSS is if you think of a human being. Humans are made up of elements such as a skeleton, organs, eyes, ears, nose. The HTML is the human structure of a web page. But humans have different visual characteristics such as hair-colour, skin-colour, nose length, height. This is what differentiates us form others, and makes us look the way we look, much like the CSS styling on a website.</p>
+          <p>If we took the CSS away from the HTML, we’d be left with a relatively lifeless website, likewise if we were all just skin covered skeletons of the same height, same hair color and same skin colour, we’d be a pretty boring looking bunch of humans.</p>
+          <p>So, in summing up the difference between HTML and CSS is that one sets the frame of a website, and the other uses takes the elements of that framework and gives it life!</p>
+          <p>Now…. When it comes to our behaviour as humans, that’s where JavaScript comes in...</p>
+          <h3>Flow Control and Loops</h3>
+          <p>Using flow control and loops will allow the program to adjust and perform certain actions based on conditions.</p>
+          <p>When your getting dressed everyday, you generally choose our outfit based on the weather. So by using the weather as a condition we can alter our outfit accordingly. The exmple bleow shows us how we migth process that:</p>
+          <pre><code>
+            if (raining) { put on rain coat }
+            if (cold) {put on hoody}
+            else { t-shirt and shorts only ! Its sunny! }      
+          </code></pre>
+          <p>When using loops in a program, we want a block of code to be executed multiple times until a condition has been met. For example, when we’re unloading the dishwasher we a taking clean dishes out and putting them away, until there is no more dishes left in the dishwasher.</p>
+          <pre><code>
+            While(number of dishes to put away are greater than zero)
+            { take out dish and put it away }
+          </code></pre>
+          <p>This pseudo code block tells us not to stop unloading dishes whilst there are still dishes to be put away, the moment there are no more dishes, that when we stop putting away dishes and move on to something else.</p>
+          <h3>What is the DOM?</h3>
+          <p>The Document Object Model, or the DOM, of a web page is a tree like structure which store nodes of data for the browser to interpret. Breaking it down piece by piece we start with <em>Document</em>: the browser will load a document to display a webpage, usually an html, The browser compiles the document and displays the output. <em>Object</em>: all the various tags/ elements/ text which make up the document are the objects. <em>Model</em> refers to the tree like structure of the document. The first object on the tree is the ‘window’ representing the interface containing the DOM, in the model the ‘document’ comes under the window as it is the child of the window, the document has its own child elements, which may have more child elements, such as images, heading, paragraphs and links. A very basic diagram is show below.</p>
+          <figure>
+            <img src="../images/DOM-diagram.jpg">
+            <figcaption>A very basic example of the DOM</figcaption>
+          </figure>
+          <p>There are a few ways in which developers can interact with the DOM of a web page. Using the browser’s web development tools you can search through a page document’s individual elements and alter them to whatever you want, either by selecting elements from the pages source code or using by JavaScript language in the browser console to call and manipulate objects. developers can also use scripts in the source code to maniputlate the DOM, these can be triggered by event on the page, such as someone clicking a green box, and that box turning blue. In this exmple we have taken the box object form the DOM and changed its colour property.</p>
+          <h3>Accesing data form Arrays and Objects</h3>
+          <p>Objects are a collection of properties and their values, an Array is a type of object that store a sequence of data, arrays and objects can also be nested inside eachother, ie. You can have an array of objects with one of their properties being an array. </p>
+          <pre><code>
+            Array:  let myArray = [44, 55, 66 ,77]
+            Object: let myObj = { fish: ‘trout’, cat: ‘tabby’, ‘puppy dog’: ‘beagle’ } 
+          </code></pre>
+          <p>In order to access a specific item in an array you must use [] bracket notation to call the index number of the element you would like to access, that is, the number relative to where the data is in the Array, it is important to note that in this case the count will start from [0], so in order access the ‘44’ in the above example we would call let <span class="monospace">element = myArray[0]</span>.</p>
+          <p>Objects behave a little differently you can use [] bracket notation, or ‘.’ Dot notation to call the property key in order to access the value of the property. This can be like <span class="monospace">let value = myObj.fish</span> or <span class="monospace">value = myObj[‘fish’]</span>, if you are calling a property key that has a space in it (eg ‘puppy dog’) you must use the latter example.</p>
+          <h3>Functions in JavaScript and why they're useful</h3>
+          <p>A function in JavaScript is a block of code which can be executed multiple times. A function can be called when it is needed, either to perform an action or take data arguments and return a different value based on how th function code maniputlates the data.</p>
+          <pre><code>
+            Function washClothes (clothing) {
+              Put clothes in washing machine.
+              When the number of clothes to put in is zero, start the washing machine
+              cleanClothes = clothing coming out of the washing machine
+              return cleanClothes; }         
+          </code></pre>
+          <p>The pseudo-code above is a function called 'washClothes', if house work was a program, every time we wanted to wash clothes we would call this function. The ‘(clothing)’ represents which clothes are going into the function, and the ‘return cleanclothes’ is what the function will send back. It can be called like so:</p>
+          <pre><code>washClothes([t-shirt, jeans, hoody, sock1, sock2])</code></pre>
+          <p>This tells the housework program that we want to do some washing and the items we’re giving it to wash are a t-shirt, jeans, hoody and a pair of socks. After the function has executed the code contained within it, it will return this:</p>
+          <pre><code>cleanClothes = [cleanT-shirt, cleanJeans, cleanHoody, cleanSock1, cleanSock2]</code></pre>
+          <p>Basically, we put clothes in a washing machine and they come out clean. Functions are useful to us because it means if we need to do a specific action many times, we can just make that action a function and call it when needed, so we don’t have to write out the same code over and over.</p>
+        </article>    
+      </div>      
+    
+    
+    </main>
+  </body>
+</html>
