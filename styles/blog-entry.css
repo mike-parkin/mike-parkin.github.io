@@ -18,12 +18,20 @@ article pre {
     background-color: #ccc;
     text-align: left;
 }
+article ul {
+    font-weight: 2em;
+    font-weight: bolder;
+}
 figure img {
     max-width: 500px;
 }
 figcaption {
     font-weight: 200;
     font-style: italic;
+}
+figure a {
+    text-decoration: none;
+    color: black
 }
 .monospace {
     font-family: monospace;
