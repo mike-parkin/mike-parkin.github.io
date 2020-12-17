@@ -47,10 +47,16 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.tech:hover {
+    cursor: pointer;
+}
 .culture {
     background-image: url(../images/coffee.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+.culture:hover {
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 780px) {
